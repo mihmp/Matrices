@@ -10,25 +10,25 @@ int main() {
     // Tamaño ingresado sea mayor que 0 y menor o igual a 5
     if (tamaño <= 0 || tamaño > 5) {
         printf("El tamaño de la matriz debe estar entre 1 y 5.\n");
-        return 1;  // Terminar el programa con un código de error
+        return 1; 
     }
 
-    // Declarar la matriz con el tamaño ingresado por el usuario
+    // Declarar la matriz con el tamaño ingresado por el usuario //
     int Matrix[5][5];
 
-    // Inicializar la matriz con 0s
+    // Inicializar la matriz con 0s //
     for (int i = 0; i < tamaño; i++) {
         for (int j = 0; j < tamaño; j++) {
             Matrix[i][j] = 0;
         }
     }
 
-    // Hacer que la diagonal principal sea 1s
+    // La diagonal principal sea 1s //
     for (int i = 0; i < tamaño; i++) {
         Matrix[i][i] = 1;
     }
 
-    // Imprimir la matriz
+    // Imprimir la matriz //
     printf("Matriz resultante:\n");
     for (int i = 0; i < tamaño; i++) {
         for (int j = 0; j < tamaño; j++) {
